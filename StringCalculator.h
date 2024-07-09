@@ -1,4 +1,5 @@
 class StringCalculator
 {
-   int add(std::string input);
+   public:
+      int add(std::string input);
 };
