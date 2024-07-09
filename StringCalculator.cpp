@@ -1,5 +1,5 @@
 #include <string>
-int add(std::string input);
+int add(std::string input)
 {
   return 0;
 }
