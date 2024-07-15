@@ -1,8 +1,21 @@
 #include <string>
 #include "StringCalculator.h"
-int StringCalculator::add(std::string input)
+
+bool isStringEmpty(std::string input)
 {
   if(input == "" || input == "0")
+  {
+    return True;
+  }
+  else
+  {
+    return False;
+  }
+}
+
+int StringCalculator::add(std::string input)
+{
+  if(isStringEmpty)
   {
     return 0;
   }
