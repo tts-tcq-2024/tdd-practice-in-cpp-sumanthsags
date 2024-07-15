@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <cstring>
 #include <cstdlib>
+#include <sstream>
+
 
 bool StringCalculator::isStringEmpty(std::string input)
 {
