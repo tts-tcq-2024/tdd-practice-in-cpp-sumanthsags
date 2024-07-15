@@ -5,11 +5,11 @@ bool isStringEmpty(std::string input)
 {
   if(input == "" || input == "0")
   {
-    return True;
+    return TRUE;
   }
   else
   {
-    return False;
+    return FALSE;
   }
 }
 
