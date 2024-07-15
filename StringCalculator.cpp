@@ -2,7 +2,7 @@
 #include "StringCalculator.h"
 #include <stdio.h>
 
-bool isStringEmpty(std::string input)
+bool StringCalculator::isStringEmpty(std::string input)
 {
   if(input == "" || input == "0")
   {
