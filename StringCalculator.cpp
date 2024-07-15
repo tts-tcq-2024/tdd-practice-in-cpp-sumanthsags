@@ -35,7 +35,7 @@ int StringCalculator::isValidNumber(const std::string& token)
 int StringCalculator::calculateSum(const std::string& input)
 {
     int sum = 0;
-    std::regex delimiter("[, \n]+");
+    std::regex delimiter("[, \n//;]+");
     std::sregex_token_iterator it(input.begin(), input.end(), delimiter, -1);
     std::sregex_token_iterator end;
 
