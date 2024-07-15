@@ -2,5 +2,8 @@
 #include "StringCalculator.h"
 int StringCalculator::add(std::string input)
 {
-  return 0;
+  if(input == NULL || input[0] == '\0')
+  {
+    return 0;
+  }
 }
