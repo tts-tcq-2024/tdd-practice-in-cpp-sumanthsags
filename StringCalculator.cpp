@@ -4,6 +4,7 @@
 #include <cstring>
 #include <cstdlib>
 #include <sstream>
+#include <regex>
 
 
 bool StringCalculator::isStringEmpty(std::string input)
