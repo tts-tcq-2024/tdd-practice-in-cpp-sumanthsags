@@ -20,4 +20,8 @@ int StringCalculator::add(std::string input)
   {
     return 0;
   }
+  else
+  {
+    return 1;
+  }
 }
