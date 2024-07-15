@@ -1,5 +1,6 @@
 #include <string>
 #include "StringCalculator.h"
+#include <stdio.h>
 
 bool isStringEmpty(std::string input)
 {
