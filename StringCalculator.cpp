@@ -27,12 +27,20 @@ int StringCalculator::isValidNumber(const std::string& token)
 int StringCalculator::calculateSum(const std::string& input)
 {
     int sum = 0;
-    std::stringstream ss(input);
-    std::string token;
-    while (std::getline(ss, token, ','))
+    std::regex delimiter("[, \n]+");
+    std::sregex_token_iterator it(input.begin(), input.end(), delimiter, -1);
+    std::sregex_token_iterator end;
+
+    while (it != end) 
     {
-        sum += std::stoi(token);
+        std::string token = *it;
+        if (isValidNumber(token)) 
+        {
+            sum += std::stoi(token);
+        }
+        ++it;
     }
+
     return sum;
 }
 
