@@ -29,7 +29,7 @@ int StringCalculator::calculateSum(const std::string& input)
     int sum = 0;
     std::stringstream ss(input);
     std::string token;
-    while (std::getline(ss, token, '\n'))
+    while (std::getline(ss, token, ','))
     {
         sum += std::stoi(token);
     }
