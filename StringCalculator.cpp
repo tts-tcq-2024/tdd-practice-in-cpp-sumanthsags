@@ -1,6 +1,8 @@
 #include <string>
 #include "StringCalculator.h"
 #include <stdio.h>
+#include <cstring>
+#include <cstdlib>
 
 bool StringCalculator::isStringEmpty(std::string input)
 {
