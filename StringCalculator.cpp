@@ -25,17 +25,12 @@ int StringCalculator::isValidNumber(const std::string& token)
 int StringCalculator::calculateSum(const std::string& input)
 {
     int sum = 0;
-    std::string delimiter = ",\n;";
-    size_t pos = 0;
+    std::stringstream ss(input);
     std::string token;
-    std::string inputCopy = input;
-    while ((pos = inputCopy.find_first_of(delimiter)) != std::string::npos)
+    while (std::getline(ss, token, '\n'))
     {
-        token = inputCopy.substr(0, pos);
         sum += std::stoi(token);
-        inputCopy.erase(0, pos + 1);
     }
-    sum += std::stoi(input);
     return sum;
 }
 
