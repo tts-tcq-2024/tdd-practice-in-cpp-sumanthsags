@@ -21,8 +21,15 @@ bool StringCalculator::isStringEmpty(std::string input)
 
 int StringCalculator::isValidNumber(const std::string& token) 
 {
-    int num = std::stoi(token);
-    return (num <= 1000);
+    try 
+    {
+        int num = std::stoi(token);
+        return (num <= 1000);
+    } 
+    catch (const std::invalid_argument&) 
+    {
+        return false;
+    }
 }
 
 int StringCalculator::calculateSum(const std::string& input)
