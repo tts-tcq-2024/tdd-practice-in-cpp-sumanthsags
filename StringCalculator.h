@@ -5,5 +5,5 @@ class StringCalculator
       int add(std::string input);
       bool isStringEmpty(std::string input);
       int isValidNumber(const char* token);
-      int calculateSum(const char* input);
+      int calculateSum(std::string input);
 };
