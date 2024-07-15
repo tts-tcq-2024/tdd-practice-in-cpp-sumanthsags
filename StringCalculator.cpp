@@ -22,7 +22,7 @@ int StringCalculator::isValidNumber(const char* token)
   return (num <= 1000);
 }
 
-int StringCalculator::calculateSum(const char* input)
+int StringCalculator::calculateSum(std::string input)
 {
     int sum = 0;
     char* token = strtok((char*)input, ",\n;");
