@@ -24,6 +24,10 @@ int StringCalculator::isValidNumber(const std::string& token)
     try 
     {
         int num = std::stoi(token);
+        if (num < 0) 
+        {
+            throw std::runtime_error("Negative numbers not allowed");
+        }
         return (num <= 1000);
     } 
     catch (const std::invalid_argument&) 
